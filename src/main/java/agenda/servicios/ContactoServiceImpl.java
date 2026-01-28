@@ -31,4 +31,8 @@ public class ContactoServiceImpl implements ContactoService {
     public void eliminar(Long id) {
         contactoRepository.eliminar(id);
     }
+    @Override
+    public Contacto actualizar(Contacto contacto){
+        return contactoRepository.actualizar(contacto);
+    }
 }

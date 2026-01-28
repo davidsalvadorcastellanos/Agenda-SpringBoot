@@ -38,5 +38,9 @@ public class ContactoRepositoryImpl implements ContactoRepository {
     public void eliminar(Long id) {
         contactos.remove(id);
     }
+    @Override
+    public Contacto actualizar(Contacto contacto){
+        return contactos.put(contacto.getId(), contacto);
+    }
 }
 
