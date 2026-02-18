@@ -18,6 +18,7 @@ import java.util.stream.Collectors;
 
 import static agenda.seguridad.Constans.*;
 
+//Corregir error entrega
 @Component
 public class JWTAuthorizationFilter extends OncePerRequestFilter {
     private Claims setSigningKey(HttpServletRequest request) {
